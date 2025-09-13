@@ -13,11 +13,18 @@ export const add = mutation({
        
     },
     handler: async (ctx) => {
+        const identity = await ctx.auth.getUserIdentity();
+
+        if (identity == null) {
+            throw new Error("User not authenticated");
+        }
+
         const userId = await ctx.db.insert("users", {
             name: "Ahmed",
             email: "ahmed@convex.dev",
             imageUrl: "https://i.pravatar.cc/150?u=1"
         });
+        
         return userId;
     }
 })
