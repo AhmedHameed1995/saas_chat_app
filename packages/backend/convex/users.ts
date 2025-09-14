@@ -19,12 +19,18 @@ export const add = mutation({
             throw new Error("User not authenticated");
         }
 
+        const orgId = identity.orgId as string;
+
+        if(!orgId) {
+            throw new Error("Organization Missing");
+        }
+
         const userId = await ctx.db.insert("users", {
             name: "Ahmed",
             email: "ahmed@convex.dev",
             imageUrl: "https://i.pravatar.cc/150?u=1"
         });
         
-        return userId;
+        return {userId, orgId};
     }
 })
