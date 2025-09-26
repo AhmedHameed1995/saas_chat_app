@@ -25,6 +25,8 @@ export const add = mutation({
             throw new Error("Organization Missing");
         }
 
+        throw new Error("Sentry Test this Please");
+
         const userId = await ctx.db.insert("users", {
             name: "Ahmed",
             email: "ahmed@convex.dev",
