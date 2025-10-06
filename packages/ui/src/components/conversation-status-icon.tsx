@@ -1,6 +1,5 @@
 import { ArrowRightIcon, ArrowUpIcon, CheckIcon } from "lucide-react";
 import { cn } from "@workspace/ui/lib/utils";
-import { resolve } from "path";
 
 
 interface ConversationStatusIconProps {
@@ -19,7 +18,7 @@ const statusConfig = {
     },
     escalated: {
         icon: ArrowUpIcon,
-        bgColor: "text-yellow-500",
+        bgColor: "bg-yellow-500",
     },
 } as const;
 
