@@ -1,7 +1,7 @@
 import { mutation, query } from "../_generated/server";
 import { components } from "../_generated/api";
 import { ConvexError, v } from "convex/values";
-import { supportAgent } from "../system/ai/supportAgent";
+import { supportAgent } from "../system/ai/agents/supportAgent";
 import { MessageDoc, saveMessage } from "@convex-dev/agent";
 import { paginationOptsValidator } from "convex/server";
 
