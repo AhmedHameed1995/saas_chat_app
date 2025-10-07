@@ -37,7 +37,6 @@ import {
 } from "@workspace/ui/components/ai/suggestion"
 import { Form, FormField } from "@workspace/ui/components/form";
 
-
 const formSchema = z.object({
     message: z.string().min(1, "Message is required"),
 });
