@@ -20,6 +20,7 @@
     "@workspace/backend": "workspace:*",
     "@workspace/math": "workspace:*",
     "@workspace/ui": "workspace:*",
+    "ai": "4.3.16",
     "convex": "^1.27.0",
     "date-fns": "^4.1.0",
     "jotai": "^2.15.0",
