@@ -17,6 +17,7 @@ import { useAtomValue, useSetAtom } from "jotai/react";
 import { statusFilterAtom } from "../../atoms";
 import { InfiniteScrollTrigger } from "@workspace/ui/components/infinite-scroll-trigger";
 import { Skeleton } from "@workspace/ui/components/skeleton";
+import Image from "next/image";
 
 export const ConversationsPanel = () => {
     const pathname = usePathname();
