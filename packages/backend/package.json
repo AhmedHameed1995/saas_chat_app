@@ -9,9 +9,12 @@
     "./convex": "./convex/*.ts"
   },
   "devDependencies": {
+    "@convex-dev/agent-playground": "^0.0.19",
     "@types/node": "^20.19.9",
+    "@vitejs/plugin-react": "^5.0.4",
     "@workspace/typescript-config": "workspace:*",
-    "typescript": "latest"
+    "typescript": "latest",
+    "vite": "^7.1.9"
   },
   "dependencies": {
     "@ai-sdk/google": "1.2.22",
